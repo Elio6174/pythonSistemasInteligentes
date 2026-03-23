@@ -11,7 +11,7 @@ def perceptron(patrones, w, umbral):
             if fx>0:
                 y = 1
             else:
-                y -=1
+                y =-1
             #Evaluar si y!=d(x) y realizar ajustes
             if y!=patron[2]:
                 #ajustamos pesos y umbral
@@ -25,7 +25,7 @@ def perceptron(patrones, w, umbral):
 
 #Fase de entrenamiendo
 #1.-Patrones de entrada compuerta OR
-patrones=[[-1,-1,-1],[1,-1,1],[-1,1,1],[1,1,1]]
+patrones=[[-1,-1,-1],[-1,1,1],[1,-1,1],[1,1,-1]]
 umbral=random.uniform(-1,1)
 w=[]
 w.append(random.uniform(-1,1))
